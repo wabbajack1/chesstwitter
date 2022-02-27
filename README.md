@@ -1,5 +1,5 @@
 # Chesstwitter
-    > play with your friends through twitter chess or play against a strong AI
+>play with your friends through twitter chess or play against a strong AI
 
 
 ## Eval
