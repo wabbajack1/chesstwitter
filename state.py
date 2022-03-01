@@ -21,7 +21,7 @@ class State(object):
     def current_state(self):
         return (self.board.board_fen(), self.board.ep_square, self.board.castling_rights, self.board.turn)
 
-    def serialize(self):
+    def serialize_encoder(self):
         """
         Serialize the data to a representation, that we can feed out Model (here an CNN). So we Bitboard the states.
         --> https://arxiv.org/pdf/1711.09667.pdf deepchess ideas. CNN is incorporated into a new
@@ -69,4 +69,4 @@ class State(object):
 if __name__ == "__main__":
     board = chess.Board()
     s = State(board)
-    s.serialize()
+    s.serialize_encoder()

@@ -39,7 +39,7 @@ def make_dataset():
                 value = values[val]
                 for i, move in enumerate(game.mainline_moves()):
                     board.push(move)
-                    data = State(board).serialize()
+                    data = State(board).serialize_encoder()
                     x.append(data)
                     y.append(value)
                     #print(board, "\n")
@@ -51,4 +51,5 @@ def make_dataset():
 if __name__ == "__main__":
     x, y = make_dataset()
     np.savez("chess_nn_data.npz", x, y)
+    print(x.shape, y.shape)
 
