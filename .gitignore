@@ -1,3 +1,5 @@
+chess_nn_data.npz
+data/
 lib/
 *.ipynb
 bin/
