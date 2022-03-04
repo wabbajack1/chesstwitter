@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Downloads/archive (6)/fruits-360_dataset"
+		},
+		{
+			"path": "../../Downloads/archive (6)/fruits-360-original-size"
+		}
+	],
+	"settings": {
+		"jupyter.jupyterServerType": "local"
+	}
+}
